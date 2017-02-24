@@ -1,0 +1,585 @@
+body{
+	background: url(images/bgbody.jpg) repeat top left;
+	font-family:ARIAL;
+}
+.header{
+	width: 1160px;
+	height: 50px;
+	background: white;
+	margin: auto;
+	padding: 20px;
+	padding-top: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 4px #ccc;
+}
+.logo{
+	top: -20px;
+	float: left;
+	clear: both;
+}
+.logo a{
+	text-decoration: none;
+	color: #666;
+
+}
+
+h1.logo{
+	margin:0;
+	margin-top: -10px;
+}
+.logo i{
+	color: #a3bd00;
+	margin-top: 5px;
+}
+h1.logo span{
+	position:relative;
+	top: -7px;
+	
+}
+/* -------Меню--------- */
+.menu{
+	display: block;
+	position: relative;
+}
+.menu a{
+	margin: 6px ;
+	text-decoration: none;
+	color: #666;
+	padding-top: 30px;
+	transition:0.5s;
+}
+.menu>li a{
+	font-weight: 800;
+	font-size: small;
+}
+.menu>li{
+	display: inline-block;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	padding:10px 5px 10px 5px;
+	transition: 0.6s;
+}
+.head{
+	width: 500px;
+	height: 60px;
+	float: right;
+	
+ }
+/* ------Вылетающее меню------- */
+.submenu{
+	position: absolute;
+	display: block;
+	width: 400px;
+	height: 430px;
+	padding:0px;
+	top: 30px;
+	border: 4px double #a3bd00 ;
+	background: white;
+	margin-top: 10px;
+	left: -9999px;
+	opacity: 0;
+	-webkit-transition:opacity .5s;
+	transition:opacity .5s;
+}
+.submenu>li{
+	list-style: none;
+	margin-top: 12px;
+	margin-left: 10px;
+}
+.submenu>li a{
+	padding:0;
+	font-weight: 400;
+	font-size: medium;
+	margin-left: 10px;	
+	transition:0.3s;
+}
+div>.menu>li:hover ul.submenu{
+	opacity:1;
+	left: 50px;
+}
+div>.menu>li:hover{
+	transition: 0.6s;
+	border: 1px solid #a3bd00;
+	border-radius: 20px;
+	color:#a3bd00;
+}
+div>.menu>li a:hover{
+	color:#a3bd00;
+}
+.submenu a:hover{
+	margin-left: 25px;
+	transition:0.3s;
+} 
+/* ---------Середина----------- */
+
+.center{
+	width: 1160px;
+	padding: 20px;
+	height: 500px;
+	background: #a3bd00;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 10px 10px 0 0;
+}
+.contact{
+	color: white;
+	padding-left: 20px;
+	border-bottom: 1px solid white;
+	padding-bottom: 20px;
+}
+.contact i{
+	padding: 4px;
+	border: 1px solid white;
+	border-radius: 4px;
+}
+.cent{
+	text-align: center;
+	color: white;
+	border-bottom: 1px solid white;
+	padding-bottom: 20px;
+}
+.info{
+	padding: 0;
+}
+.info>li{
+	display: inline-block;
+	width: 250px;
+	margin-left: 15px;
+	text-align: center;
+	border-right: 1px solid white;
+	padding-right: 15px;
+	margin-top: 20px;
+}
+ul.info li:last-child{
+	border: none;
+}
+.info>li p{
+	padding: 10px 0 30px 0;
+	font-size:.8em;
+	color: white;
+}
+.info h3{
+	padding: 20px 0 0px 0px;
+	color: white;
+}
+.pic1{
+	background: url(images/lunch5.png);
+	background-size: 100% 100%;
+	width: 80px;
+	height:50px;
+	margin-left: 84px;
+	padding-top: 30px;
+}
+.pic2{
+	background: url(images/condiment.png);
+	background-size: 100% 100%;
+	width: 80px;
+	height:80px;
+	margin-left: 94px;
+}
+.pic3{
+	background: url(images/dance.png);
+	background-size: 100% 100%;
+	width: 80px;
+	height:80px;
+	margin-left: 84px;
+}
+.pic4{
+	background: url(images/museum.png);
+	background-size: 100% 100%;
+	width: 80px;
+	height:80px;
+	margin-left: 84px;
+}
+.info a{
+	color: white;
+	text-decoration: none;
+	border: 1px solid white;
+	padding: 5px 15px 5px 15px;
+	border-radius: 50px;
+	transition: 0.7s;
+}
+.info a:hover{
+	background: white;
+	color:#a3bd00;
+	transition: 0.7s;
+}
+/* ------------Контент----------- */
+
+.content{
+	width: 1160px;
+	height: 1035px;
+	padding: 20px;
+	margin: auto;
+	background: white;
+}
+.content img{
+	width: 400px;
+	float: left;
+	margin-right: 20px;
+	box-shadow: 0 0 4px #000;
+}
+.content h1{
+	text-align: center;
+}
+.box{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background: red;
+	margin-left: 25px;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0 0 4px #000;
+	overflow: hidden;
+}
+.foto1{
+	background: url(images/rynok.jpg) no-repeat left top;
+	background-size: 100% auto;
+}
+.foto2{
+	background: url(images/opera.jpg) no-repeat left top;
+	background-size: 100% auto;
+}
+.foto3{
+	background: url(images/vir.jpg) no-repeat left top;
+	background-size: 100% auto;
+}
+.foto4{
+	background: url(images/pot.jpg) no-repeat left top;
+	background-size: 100% auto;
+}
+.foto5{
+	background: url(images/kapl.jpg) no-repeat left top;
+	background-size: 100% auto;
+}
+.box div{
+	background:#a3bd00;
+	color: white;
+	height: 200px;
+	margin:0;
+	margin-top: 140px;
+	transition: 0.5s;
+}
+.box div h3{
+	margin-top: 0;
+	padding-top: 20px;
+	margin-left:10px;
+}
+.box div p{
+	font-size: small;
+}
+div.box:hover div{
+	margin-top: 0;
+	transition:0.5s;
+}
+.imgfoot{
+	display: inline-block;
+	width: 1160px;
+	margin-left: 10px;
+	
+}
+.imgfoot img{
+	width: 190px;
+	height: 100px;
+	padding:10px;
+	box-shadow: none;
+	border: 1px solid #a3bd00;
+	margin-left: px;
+}
+/* -------------Низ------------- */
+.footer{
+	width: 1160px;
+	padding: 20px;
+	height: 289px;
+	background:#333;
+	margin: auto;
+}
+.box-f{
+	width: 350px;
+	display: inline-block;
+	height: 250px;
+	margin-left: 10px;
+}
+.box-1{
+	float: left;
+}
+.footer h4{
+	color: white;
+}
+.box-1 ul{
+	padding:0;
+}
+.box-1 ul li{
+	list-style: none;
+	padding: 0;
+	margin: 0 0 10px 15px;
+	
+}
+.box-1 ul li a{
+	color: #666;
+	font-size: 90%;
+	text-decoration: none;
+	transition: 0.5s;
+}
+.box-1 ul li a i{
+	font-size: large;
+	font-weight: 900;
+	
+}
+.box-1 ul li a:hover {
+	transition:0.5s;
+	color: #a3bd00;
+}
+/* ----------Foto------------ */
+.box-2 img{
+	width: 100px;
+	height: 70px;
+	transition: 1s;
+}
+.box-2 img:hover{
+	transform:scale(7) translateY(-50px);
+	position:relative;
+}
+/* ---------Продолжение Низ---------- */
+.box-4{
+	position: relative;
+	width:100%;
+	height: 50px;
+	border-top: 2px solid #444;
+}
+.box-4 p{
+	color: #666;
+}
+.box-4 p span{
+	color: #a3bd00;
+}
+.box-4 a{
+	position:absolute;
+	text-decoration: none;
+	color: #a3bd00;
+	right:0;
+	bottom: 0;
+	font-size: 300%;
+}
+/* -----------История------------- */
+
+.history{
+	width: 1160px;
+	padding: 20px;
+	height: 60px;
+	background: #a3bd00;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 10px 10px 0 0;
+}
+.hiscent{
+	width: 1160px;
+	padding: 20px;
+	height:7600px;
+	background: white;
+	margin: auto;
+}
+.hiscent h3{
+	text-align: center;
+}
+.a1, .a3, .a4, .a5, .a6, .a7, .a8, .a9, .a10, .a11, .a12, .a13, .a14, .a15{
+	font-size: 105%;
+	text-align: justify;
+}
+.a1 img, .a4 img, .a8 img, .a10 img, .a12 img, .a14 img{
+	width: 200px;
+	height: 150px;
+	float: left;
+	margin-right: 15px;
+	box-shadow: 0 0 4px #000;
+}
+.zmist{
+	display: block;
+	padding-left: 15px;
+}
+.zmist li{
+	list-style: none;
+	margin-top: 5px;
+	
+}
+.zmist a{
+	text-decoration: none;
+	color: black;
+	font-size: 108%;
+	transition: 0.7s;
+}
+.zmist a:hover{
+	color:#a3bd00;
+	margin-left: 25px;
+	transition:0.7s;
+}
+.a2 li{
+	font-size: 105%;
+	margin-bottom: 10px;
+}
+.a3 img, .a7 img, .a15 img{
+	width: 200px;
+	height: 270px;
+	float: right;
+	margin-left: 15px;
+	box-shadow: 0 0 4px #000;
+}
+.a5 img, .a9 img, .a11 img, .a13 img{
+	width: 200px;
+	height: 150px;
+	float: right;
+	margin-left: 15px;
+	box-shadow: 0 0 4px #000;
+}
+/* ---------------Цікаві дані----------------- */
+
+.data{
+	width: 1160px;
+	padding:20px;
+	height: 1800px;
+	margin: auto;
+	background: white;
+}
+.data h1, h4{
+	text-align: center;
+}
+.table{
+	width: 1100px;
+	height: 650px;
+	margin: auto;
+}
+table{
+	background: #E7F0AB;
+	border-collapse: collapse;
+}
+td{
+	width: 200px;
+	height: 70px;
+	text-align: center;
+	border: 6px solid white;
+}
+td i{
+	color: white;
+}
+td span{
+	font-size: 160%;
+	padding: 0 100px 0 100px;
+}
+td img{
+	display: block;
+	width: 25px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+/* ----------------Gallery------------------- */
+.gallery{
+	width: 1160px;
+	padding: 20px;
+	height: 1670px;
+	margin: auto;
+	background: white;
+}
+.gallery h1{
+	text-align: center;
+}
+.gallery ul li{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	padding: 10px;
+	position: relative;
+	margin: 4px;
+	z-index:1000;
+	vertical-align:top;
+}
+.gallery ul{
+	padding: 0;
+}
+
+.gallery img{
+	height: 300px;
+	opacity: 0.7;
+	transition-duration: 0.5s;
+}
+.gallery img:hover{
+	transform: scale(1.5);
+	box-shadow: 0px 0px 30px gray;
+	opacity: 1;
+}
+.gallery ul li:hover{
+	overflow: visible;
+	z-index: 10000;
+}
+/* --------------Contacts------------------- */
+.contacts{
+	width: 1160px;
+	padding: 20px;
+	height: 720px;
+	background: white;
+	margin: auto;
+}
+.contacts h1{
+	text-align: center;
+}
+.cont-1{
+	display: inline-block;
+	width: 300px;
+	height: 200px;
+	margin: 30px 130px 50px 130px;
+}
+.cont-1 h5{
+	background: #a3bd00;
+	font-size: 105%;
+	padding: 10px;
+	color: white;
+	margin-bottom:0;
+}
+.cont-1 ul{
+	padding: 0;
+}
+.cont-1 ul li{
+	list-style: none;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+.cont-1 i{
+	display:table-cell;
+	width:30px;
+	height:30px;
+	transition:0.5s;
+	text-align:center;
+	vertical-align:middle;
+	color:#fff;
+	background-color:#a4bd00;
+}
+.cont-1 span{
+	display:table-cell;
+	vertical-align:middle;
+	height:30px;
+	padding-left:15px;
+}
+.down{
+	width:0;
+	height:0;
+	border-style: solid;
+	border-width: 10px 10px 0 10px;
+	border-color: #a4bd00 transparent transparent transparent;
+	margin-left: 19px;
+}
+.cont-1 ul li:hover i{
+	color: #a3bd00;
+	background: white;
+	outline: 1px solid #a3bd00;
+	transition:0.5s;
+}
+.contacts img{
+	display: block;
+	margin: auto;
+	padding-top: 50px;
+}
+
+
+
+
+
